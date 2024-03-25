@@ -1,22 +1,23 @@
-package loop;
-
-import java.util.Scanner;
+package jump;
 
 public class Example03 {
 
 	public static void main(String[] args) {
-		System.out.print("숫자를 입력하세요 : ");
-		Scanner input = new Scanner(System.in);
-		int num = input.nextInt();
+		String s1 = " Java";
+		String s2 = " Programming ";
 		
-		int i = 1;
+		String s = s1.concat(s2);
+		System.out.println("s.length() :" + s.length() + "(" + s + ")");
+		s = s.trim();
+		System.out.println("s.length() :" + s.length() + "(" + s + ")");
 		
-		do {
-			
-			System.out.println(i);
-			
-			i++;
-		} while (i <= 5);
+		
+		System.out.println("s.charAt(1) :" + s.charAt(1));
+		System.out.println("s.substring(6) :" + s.substring(6));
+		System.out.println("s.substring(5, 13) :" + s.substring(5, 13));
+		System.out.println("s.indexOf('P') :" + s.indexOf("P"));
+		System.out.println("s.toLowercase() :" + s.toLowerCase());
+		System.out.println("s.toUpperCase() : " + s.toUpperCase());
 
 	}
 

@@ -1,19 +1,20 @@
-package loop;
-
-import java.util.Scanner;
+package array;
 
 public class Example04 {
 
 	public static void main(String[] args) {
-		System.out.print("숫자를 입력하세요 : ");
-		Scanner input = new Scanner(System.in);
-		int num = input.nextInt();
+		int myArr[][] = { {1, 2, 3, 4, 5},
+				{6, 7, 8, 9, 10},
+				{11, 12, 13, 14, 15}
+		};
 		
-		for (int i = 1; i <= 3; i++) {
-			
-			for (int j = 1; j <= 3; j++);
+		for (int row = 0; row < 3; row++) {
+			for (int col = 0; col < 5; col++) {
+				System.out.print(myArr[row][col] + " ");
+			}
+			System.out.println();
+		}
+		System.out.println("myArr[0][1] 값: " + myArr[0][1]);
 		}
 
 	}
-
-}
